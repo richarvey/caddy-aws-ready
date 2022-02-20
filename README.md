@@ -87,3 +87,37 @@ __force_path_style__
 
 __use_accelerate__
 - Set this to true to enable S3 Accelerate feature.
+
+### certmagic-s3
+[https://github.com/techknowlogick/certmagic-s3](https://github.com/techknowlogick/certmagic-s3)
+
+```json
+{
+	"host": "",
+	"bucket": "",
+	"access_key": "",
+	"secret_key": "",
+	"prefix": "",
+	"encryption_key": ""
+}
+```
+
+#### Field List
+
+__host__
+There are no docs for this property.
+
+__bucket__
+There are no docs for this property.
+
+__access_key__
+There are no docs for this property.
+
+__secret_key__
+There are no docs for this property.
+
+__prefix__
+There are no docs for this property.
+
+__encryption_key__
+EncryptionKey is optional. If you do not wish to encrypt your certficates and key inside the S3 bucket, leave it empty.
