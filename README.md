@@ -105,19 +105,19 @@ __use_accelerate__
 #### Field List
 
 __host__
-There are no docs for this property.
+- There are no docs for this property.
 
 __bucket__
-There are no docs for this property.
+- There are no docs for this property.
 
 __access_key__
-There are no docs for this property.
+- There are no docs for this property.
 
 __secret_key__
-There are no docs for this property.
+- There are no docs for this property.
 
 __prefix__
-There are no docs for this property.
+- There are no docs for this property.
 
 __encryption_key__
-EncryptionKey is optional. If you do not wish to encrypt your certficates and key inside the S3 bucket, leave it empty.
+- EncryptionKey is optional. If you do not wish to encrypt your certficates and key inside the S3 bucket, leave it empty.
