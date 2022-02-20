@@ -1,6 +1,6 @@
 # caddy-aws-ready
 
-AWS ready caddy server image impliments, extra optional modules to inyteract with dynamoDB for storage and allow caddy to be a reverse proxy for S3.
+AWS ready caddy server image impliments, extra optional modules to interact with dynamoDB or S3 for certmagic storage and allow caddy to be a reverse proxy for S3 which brings extra features to static hosting.
 
 ### caddy.storage.dynamodb
 [https://github.com/silinternational/certmagic-storage-dynamodb](https://github.com/silinternational/certmagic-storage-dynamodb)
