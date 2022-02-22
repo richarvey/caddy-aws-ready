@@ -1,0 +1,4 @@
+{
+    storage dynamodb CertMagic {
+    }
+}

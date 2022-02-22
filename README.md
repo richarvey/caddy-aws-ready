@@ -7,6 +7,21 @@ AWS ready caddy server image impliments, extra optional modules to interact with
 
 caddy.storage.dynamodb implements certmagic.Storage to facilitate storage of certificates in DynamoDB for a clustered environment. Also implements certmagic.Locker to facilitate locking and unlocking of cert data during storage
 
+This image is preconfigured to work with a dynamoDB table called __CertMagic__ you can terrafom the table with the following:
+
+```terraform
+resource "aws_dynamodb_table" "CertMagic" {
+  name           = "CertMagic"
+  billing_mode   = "PAY_PER_REQUEST"
+  hash_key       = "PrimaryKey"
+
+  attribute {
+    name = "PrimaryKey"
+    type = "S"
+  }
+}
+```
+
 ```json
 {
 	"table": "",
@@ -87,37 +102,3 @@ __force_path_style__
 
 __use_accelerate__
 - Set this to true to enable S3 Accelerate feature.
-
-### certmagic-s3
-[https://github.com/techknowlogick/certmagic-s3](https://github.com/techknowlogick/certmagic-s3)
-
-```json
-{
-	"host": "",
-	"bucket": "",
-	"access_key": "",
-	"secret_key": "",
-	"prefix": "",
-	"encryption_key": ""
-}
-```
-
-#### Field List
-
-__host__
-- There are no docs for this property.
-
-__bucket__
-- There are no docs for this property.
-
-__access_key__
-- There are no docs for this property.
-
-__secret_key__
-- There are no docs for this property.
-
-__prefix__
-- There are no docs for this property.
-
-__encryption_key__
-- EncryptionKey is optional. If you do not wish to encrypt your certficates and key inside the S3 bucket, leave it empty.
