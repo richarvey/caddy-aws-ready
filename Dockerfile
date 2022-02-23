@@ -6,5 +6,5 @@ RUN xcaddy build \
 
 FROM caddy:2.4.6-alpine
 
-COPY Caddyfile /srv/Caddyfile
+COPY Caddyfile /etc/caddy/Caddyfile
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
